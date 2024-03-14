@@ -1,0 +1,15 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "front": "cd ./front && npm ci && npm run build && mv ./dist ../back && cd ../",
+    "back": "cd ./back && npm ci && npx tsc && nodemon ./dist-s/src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run front && npm run back"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
