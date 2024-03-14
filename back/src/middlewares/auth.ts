@@ -6,6 +6,8 @@ export const auth: MiddlewareFnType = async (req, res, next) => {
   const { errorRes, failRes } = req;
   try {
     const token = req.signedCookies.jwt;
+    console.log(req.cookies);
+    console.log(req.signedCookies);
 
     if (!token) return failRes(401, "인증이 필요합니다.");
     const isVerified = <{ nickName: string }>decodeToken(token);
