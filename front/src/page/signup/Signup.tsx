@@ -11,7 +11,7 @@ const Signup = () => {
   const nickRef = useRef<HTMLInputElement>(null);
   const pwdRef = useRef<HTMLInputElement>(null);
   const pwd2Ref = useRef<HTMLInputElement>(null);
-  const { loading, signUpHandler, error } = useSignUp();
+  const { loading, signUpHandler } = useSignUp();
 
   const onSubmitHandler = (e: FormEvent) => {
     e.preventDefault();
