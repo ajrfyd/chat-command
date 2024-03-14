@@ -12,6 +12,7 @@ export const server = http.createServer(app);
 export const io = new Server(server, {
   cors: {
     origin: [
+      "https://k-log3943.netlify.app",
       "http://localhost:3040",
       "http://localhost:5174",
       "http://localhost:5555",

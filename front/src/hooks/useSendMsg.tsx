@@ -14,7 +14,6 @@ const useSendMsg = () => {
       });
       setMsgs(data.result);
     } catch (e) {
-      setLoading(false);
       const { message } = e as Error;
       toast.error(message as string);
     } finally {

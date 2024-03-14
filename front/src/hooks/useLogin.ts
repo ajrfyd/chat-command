@@ -22,7 +22,6 @@ const useLogin = () => {
       localStorage.setItem("user", JSON.stringify(result));
     } catch (e) {
       console.log(e);
-      setLoading(false);
       setError(true);
     } finally {
       setLoading(false);

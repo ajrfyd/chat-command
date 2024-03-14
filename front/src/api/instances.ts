@@ -9,3 +9,8 @@ export const baseInstance = axios.create({
   },
   withCredentials: true,
 });
+
+baseInstance.interceptors.response.use(
+  (res) => res,
+  (err) => err.response
+);

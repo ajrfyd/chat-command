@@ -16,10 +16,6 @@ export type MessageModelType = {
   roomId: string;
 };
 
-export type MsgTypeForClient = MessageModelType & {
-  msgs: MessageModelType[];
-};
-
 export type ToBeSavedMsgType = Partial<MessageModelType>;
 
 export type MsgsForAdminType = MessageModelType & {

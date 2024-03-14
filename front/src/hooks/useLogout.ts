@@ -14,12 +14,10 @@ const useLogout = () => {
       );
 
       const { result } = data;
-      console.log(result, " ?S?AD?A?SDasf afd asASd");
       setUser(result);
       localStorage.clear();
     } catch (e) {
       console.log(e);
-      setLoading(false);
       setError(true);
     } finally {
       setLoading(false);
