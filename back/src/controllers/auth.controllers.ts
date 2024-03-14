@@ -54,7 +54,6 @@ export const login = async (req: RQ, res: RS): Promise<void> => {
       sameSite: "strict", // CSRF attacks cross-site request forgery attacks
       secure: process.env.NODE_ENV !== "development",
       signed: true,
-      domain: "https://k-log3943.netlify.app",
     });
     completeRes({ ...user, password: null });
   } catch (e) {
