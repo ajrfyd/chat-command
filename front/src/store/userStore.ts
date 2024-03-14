@@ -9,7 +9,7 @@ const useUserStore = create<UserStoreState & userStoreAction>((set) => ({
   error: false,
   setLoading: (loading) => set({ loading }),
   // setUser: (user) => set((state) => ({ user: { ...state.user, ...user } })),
-  setUser: (user) => set((state) => ({ user })),
+  setUser: (user) => set({ user }),
   setError: (error) => set({ error }),
 }));
 

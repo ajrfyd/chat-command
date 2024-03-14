@@ -3,7 +3,6 @@ import { MsgType } from "../../store/types";
 import { makeCreatedAt } from "../../utils/utils";
 import useUserStore from "../../store/userStore";
 import { useEffect, useRef } from "react";
-import useSocket from "../../hooks/useSocket";
 
 type MessageProps = MsgType & {};
 

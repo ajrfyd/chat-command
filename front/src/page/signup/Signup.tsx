@@ -2,7 +2,6 @@ import Border from "../../components/login/Border";
 import Title from "../../components/login/Title";
 import SectionInput from "../../components/login/SectionInput";
 import LinkTo from "../../components/login/LinkTo";
-import DefaultButton from "../../components/button/DefaultButton";
 
 const Signup = () => {
   return (
@@ -28,7 +27,6 @@ const Signup = () => {
           onChange={() => {}}
         />
         <LinkTo href="/login" text="Already have an account" />
-        {/* <DefaultButton text="Sign Up" type="submit" /> */}
       </form>
     </Border>
   );
