@@ -17,7 +17,6 @@ const SubmitForm = () => {
     const { current } = inputRef;
     if (!current) return;
     const { roomId } = selectedRoom as RoomType;
-    console.log(current.value);
     try {
       await sendMsg(current.value, roomId);
       current.value = "";
