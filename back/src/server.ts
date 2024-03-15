@@ -28,6 +28,7 @@ app.use(
     methods: ["GET", "POST", "OPTIONS"],
     origin: [
       "https://k-log3943.netlify.app",
+      "https://klog.hkound.pe.kr",
       "http://localhost:5174",
       "http://localhost:5555",
       "http://localhost:5173",
